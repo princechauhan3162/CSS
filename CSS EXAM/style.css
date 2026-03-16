@@ -1,0 +1,157 @@
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: rgba(20, 30, 50, 0.9);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.hero-text {
+    margin: auto;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+.hero-text p {
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 40px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+}
+
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to bottom right, #ff00ff, #800080);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.8rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+.portfolio-layout {
+    display: flex;
+    text-align: left;
+}
+
+.portfolio-filter {
+    width: 150px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.portfolio-filter li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.img-box img {
+    width: 100%;
+    display: block;
+}
+
+.footer-bar {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10%;
+    margin-top: 50px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.8rem;
+}
+
+.footer-item span {
+    background: #4b4b6d;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image
+{
+    display:inline-block;
+    align-items: center;
+    margin-right: 120px;
+}
