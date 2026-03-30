@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover
+{
+    color: blue
+}
+
+.user-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+}
+
+
+
+.gender-toggle {
+    display: flex;
+    background: #3300ff;
+}
+
+.gender-toggle span {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.gender-toggle .women {
+    background: #4433ff;
+    opacity: 0.7;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: #fff;
+    color: #ccc;
+    position: relative;
+}
+
+.filters {
+    display: flex;
+    gap: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 50px;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #23262f;
+    color: white;
+    padding: 80px 10%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-image img {
+    width: 450px;   
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+    margin-left: 50px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+}
+
+.hero-text p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin-left: 250px;
+}
+
+.btn-video {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #3300ff;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 250px;
+}
+
+/* Products Section */
+.products-section {
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.products-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.product-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.product-card {
+    width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.stock {
+    font-style: italic;
+    font-size: 13px;
+    color: #777;
+}
+
+.price {
+    color: #5544ff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #3300ff;
+    cursor: pointer;
+}
+
+.preference-link {
+    margin-top: 40px;
+    color: #ccc;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-top: 1px solid #333;
+}
+
+.footer-social
+{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .product-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
